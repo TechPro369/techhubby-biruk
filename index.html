@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- SEO Meta Tags -->
+    <title>Biruk Aregu - IT Specialist</title>
+    <meta name="description" content="IT Specialist specializing in Cybersecurity, Cloud Solutions, and Enterprise IT Support" />
+    <meta name="keywords" content="IT Security, Cybersecurity, Cloud Solutions, Enterprise IT Support, Technology, AWS, Network Security, Cloud Architecture, System Administration, IT Infrastructure" />
+    <meta name="author" content="Biruk Aregu" />
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Biruk Aregu - IT Specialist" />
+    <meta property="og:description" content="IT Specialist specializing in Cybersecurity, Cloud Solutions, and Enterprise IT Support" />
+    <meta property="og:image" content="https://avatars.githubusercontent.com/u/197425398?s=400&u=4551f37251a288de52a1031fe4d9963ee24ba2b2&v=4" />
+    <meta property="og:site_name" content="Biruk Aregu Portfolio" />
+    <meta property="og:locale" content="en_US" />
+    
+    <!-- Resource Hints -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://images.unsplash.com" crossorigin />
+    <link rel="dns-prefetch" href="https://images.unsplash.com" />
+    
+    <!-- Font Display Optimization -->
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" media="print" onload="this.media='all'" />
+    
+    <!-- Critical CSS -->
+    <style>
+      :root { color-scheme: dark; }
+      body { 
+        background: #000; 
+        margin: 0;
+        font-family: Inter, system-ui, -apple-system, sans-serif;
+        -webkit-font-smoothing: antialiased;
+        text-rendering: optimizeLegibility;
+      }
+      #root { min-height: 100vh; }
+      .loading { 
+        position: fixed;
+        inset: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #000;
+        z-index: 9999;
+        transition: opacity 0.3s ease-out;
+      }
+      .loading.fade-out {
+        opacity: 0;
+        pointer-events: none;
+      }
+      .loading svg {
+        width: 38px;
+        height: 38px;
+      }
+      @keyframes spin {
+        to { transform: rotate(360deg); }
+      }
+      .loading path {
+        animation: spin 1s linear infinite;
+        transform-origin: 18px 18px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root">
+      <!-- Initial loading state -->
+      <div class="loading">
+        <svg viewBox="0 0 38 38" xmlns="http://www.w3.org/2000/svg" stroke="#10b981">
+          <g fill="none" fill-rule="evenodd">
+            <g transform="translate(1 1)" stroke-width="2">
+              <circle stroke-opacity=".5" cx="18" cy="18" r="18"/>
+              <path d="M36 18c0-9.94-8.06-18-18-18"/>
+            </g>
+          </g>
+        </svg>
+      </div>
+    </div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

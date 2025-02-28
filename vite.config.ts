@@ -3,10 +3,14 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
+  base: '/', // Add this line for correct path resolution
   build: {
     outDir: 'dist',
-    sourcemap: false, // Disable sourcemaps in production
+    sourcemap: false,
     rollupOptions: {
+      input: {
+        main: './index.html' // Add this to specify entry point
+      },
       output: {
         manualChunks: {
           vendor: ['react', 'react-dom', 'react-hot-toast'],
